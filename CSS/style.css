@@ -1,27 +1,8 @@
-/*Hineweise:
-   
-Wichtig: Adblocker ausschalten!! sonst ist in der desktop ansicht mein aside "werbeblock" nicht sichtbar da dieser die klasse "werbung" hat, welcher
-von den meisten adblockern erkannt wird :D
-
-
-Verschiedene komplexe selectoren verdendet auf dieser Webiste (zum beispiel) :
-
-   -> #navbar a
-   -> #hamburg:checked + .ausklappnav a:active
-   -> .kontakt_links *
-   -> article p::first-letter
-   -> main a:hover
-   -> input[type=text]
-   -> input[type=text] , select 
-   -> blockquote > a
-
-   hoffe das erleichtert einiges bei >600 zeilen CSS :)
-
-
-
-
-
+/*  
+This Portfolio website belongs to Jochem Punt
 */
+
+
 
 h4 {
     padding: 0;
@@ -32,13 +13,14 @@ h4 {
 
 .proj_beschreibung {
     margin-top: 0;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 :root {
     --meinBlau: rgb(12, 186, 255);
-    --gradient: linear-gradient(45deg, #2af585, #22e483, #1bd7bb, #14c9cb, #0fbad8, #077ae5);
-    --hellergradient: linear-gradient(45deg, #22cf70, #27bb71, #1bb19a, #159ea0, #1698af, #1d68af);
+    --gradient: linear-gradient(45deg,  #00cccc, #8102d5);
+    --ellipseGradient: radial-gradient(ellipse, #00cccc, #6302a4);
+    --hellergradient: linear-gradient(45deg,  #00cccc, #810ad0);
 }
 
 header {
@@ -71,13 +53,16 @@ em {
     /* Optional: Füge abgerundete Ecken hinzu */
 }
 
+
+
+
 h3 {
-    margin-top: 0.7em;
+    margin-top: 0.5em;
     display: inline;
     padding-right: 0.5em;
     padding-left: 0.3em;
     margin-bottom: 1em;
-    font-size: 1.8em;
+    font-size: 3em;
     color: white;
     background: rgb(43, 43, 43);
 }
@@ -128,9 +113,9 @@ nav {
 }
 
 main a {
-    color: rgb(43, 43, 43, 1);
+    color: rgb(29, 62, 150);
     text-decoration: none;
-    font-style: italic;
+    font-weight: bold;
     background-image: var(--hellergradient);
     /* background-clip: text;*/
     -moz-background-clip: text;
@@ -247,12 +232,60 @@ body {
     top: 0;
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../medien/bg.png);
+   
+  
+   
     background-attachment: fixed;
     max-width: 100%;
     overflow-x: hidden;
     position: absolute;
 }
+
+.background{
+    background: rgb(22, 22, 22);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+.blob {
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -10%);
+    border-radius: 20% 50% 40% 40% / 50% 30% 50% 20%;
+    width: 500px;
+    height: 600px;
+    background: radial-gradient(ellipse, #00cccc, #6302a4);
+    animation: pulse 5s ease-in-out infinite alternate, blurMovement 5s infinite linear;
+    opacity: 0.7;
+    z-index: -1;
+    filter: blur(30px);
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+      transform: translate(-10%, -50%) scale(1.7);
+    }
+  }
+
+  @keyframes blurMovement {
+    0% {
+      filter: blur(30px,10px);
+    }
+    50% {
+      filter: blur(60px);
+    }
+    100% {
+      filter: blur(30px,10px);
+    }
+  }
 
 .content-grid {
     grid-template-rows: auto auto 1fr;
@@ -281,7 +314,7 @@ header {
 
 h1 {
     display: block;
-    font-size: 4rem;
+    font-size: 5rem;
     margin: 1rem;
     background-image: var(--gradient);
     /*background-clip: text;*/
@@ -295,11 +328,11 @@ h1 {
 }
 
 section {
-    background-color: rgb(255, 255, 255);
+    /*background-color: rgb(255, 255, 255);*/
     margin-bottom: 2em;
     padding: 1em 1em;
     padding-bottom: 2em;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.747);
+    /*box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.747);*/
 }
 
 .profilbild {
@@ -319,12 +352,15 @@ section {
 .project-container {
     margin-top: 20px;
     padding-bottom: 20px;
-    padding-left: 4px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-left: 15px;
+    padding-right:15px;
+    padding-top: 10px; 
+    border-radius: 15px;
+    background-color: #fffefe;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    
 }
+
 
 .container {
     display: flex;
@@ -373,14 +409,8 @@ iframe,
     width: 100%;
     height: 100%;
 }
-
-.vid-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%;
-    margin-bottom: 1em;
-    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+a{
+    color: #077ae5;
 }
 
 #musikbehälter {
@@ -522,7 +552,7 @@ aside {
     }
 }
 
-@media screen and (max-width:385px) {
+@media screen and (max-width:600px) {
     #navbar {
         padding: 0;
         display: none;
@@ -564,6 +594,47 @@ aside {
         overflow: scroll;
     }
 }
+
+.vid-container {
+	position: relative;
+	overflow: hidden;
+	width: 95%;
+	padding-top: 56.25%;
+	margin-bottom: 1em;
+	align-self: center;
+	display: block;
+	margin: 0 auto;
+}
+
+
+.screenshot {
+    width: 90%; /* Set the width to 70% of its parent container */
+    display: block; /* Make sure it's a block element to apply width */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Ensure the image doesn't exceed its original size */
+  }
+
+
+h4{
+    font-size: 1.5em;
+}
+
+.centered{
+    text-align: center;
+    padding-top: 0;
+}
+
+#padded{
+    margin-top: 0.8em;
+}
+
+.medium-img {
+    width: 70%; /* Set the width to 70% of its parent container */
+    display: block; /* Make sure it's a block element to apply width */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Ensure the image doesn't exceed its original size */
+}
+
 
 .icons {
     text-decoration: none;
