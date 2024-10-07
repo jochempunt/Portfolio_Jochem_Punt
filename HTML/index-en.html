@@ -3,163 +3,185 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jochem Punt - Portfolio</title>
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/bulma.min.css">
-    <link rel="stylesheet" href="../CSS/bulma-carousel.min.css">
-    
-    
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../JS/bulma.carousel.min.js"></script>
-    
-    
-    
-    <script src="../JS/index.js"></script>
-    <title>Jochem Punt</title>
+    <script src="../JS/script.js" defer></script>
 </head>
 
-<body class="content-grid">
+<body>
     <div class="background"></div>
     <div class="blob"></div>
-    <nav>
-        
-      
-            
-        <div id="navbar">
-          
-            <a  href="index.html">Deutsch</a>
-            <a class="sie-sind-hier" href="index-en.html">English</a>
 
+    <nav>
+        <div id="pages">
+            <a href="index-en.html" id="selected">Projects</a>
+            <a href="music-gallery.html">Music Gallery</a>
+            <a href="contact.html">Contact</a>
         </div>
+
+        <!--
+        <div class="language-selector">
+            <label for="language">Language:</label>
+            <select id="language">
+            <option value="en">English</option>
+            <option value="nl">Dutch</option>
+            <option value="fr">French</option>
             
+        </select>
+        </div> -->
+    </nav>
+
+    <header>
+        <h1>Jochem Punt</h1>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/jochem-punt-5446b220a/" target="_blank" title="LinkedIn">
+                <img src="../medien/LinkedIN_black.png" alt="LinkedIn Link">
+            </a>
         </div>
-        
-        
-        <label for="hamburg" id="burgermenue">
-            <svg viewBox="0 0 100 80" width="40" height="40">
-                <rect width="100" height="20"></rect>
-                <rect y="30" width="100" height="20"></rect>
-                <rect y="60" width="100" height="20"></rect>
-            </svg></label>
-            <input type="checkbox" id="hamburg">
-            <div class="ausklappnav">
-                <ul>
-                    <li><a  href="index.html">Deutsch</a></li>
-                    <li><a class="sie-sind-hier" href="index-en.html">English</a></li>
-                </ul>
+    </header>
+
+    <h2>Portfolio</h2>
+
+    <div class="filter-container">
+        <h3>Filter by Tags</h3>
+        <div class="filters">
+            <label class="filter-label">
+            <input type="checkbox" class="filter-checkbox" data-filter="programming">
+            <span class="checkbox-custom"></span>
+            <span class="filter-text">Programming</span>
+          </label>
+            <label class="filter-label">
+            <input type="checkbox" class="filter-checkbox" data-filter="music-production">
+            <span class="checkbox-custom"></span>
+            <span class="filter-text">Music Production</span>
+          </label>
+            <label class="filter-label">
+            <input type="checkbox" class="filter-checkbox" data-filter="games">
+            <span class="checkbox-custom"></span>
+            <span class="filter-text">Games</span>
+          </label>
+            <label class="filter-label">
+            <input type="checkbox" class="filter-checkbox" data-filter="3d-graphics">
+            <span class="checkbox-custom"></span>
+            <span class="filter-text">3D Graphics</span>
+          </label>
+            <label class="filter-label">
+            <input type="checkbox" class="filter-checkbox" data-filter="sound-design">
+            <span class="checkbox-custom"></span>
+            <span class="filter-text">Sound Design</span>
+          </label>
+            <label class="filter-label">
+            <input type="checkbox" class="filter-checkbox" data-filter="ai">
+            <span class="checkbox-custom"></span>
+            <span class="filter-text">AI</span>
+          </label>
+        </div>
+    </div>
+
+
+    <main>
+        <section id="portfolio">
+
+
+            <div class="project" data-tags="AI, 3D-Graphics, Programming">
+                <h3>Bachelor-Thesis: AR Product Configurator with AI Assistant</h3>
+                <p>Developed an Augmented Reality product configurator with an integrated, voice-controlled AI assistant based on a Large Language Model (LLM). This innovative solution simplifies product configuration and optimizes usability by combining
+                    AR and AI technologies.</p>
+                <div class="technologies">
+                    <em>Technologies: Unity, ARFoundation, GPT-4</em>
+                </div>
+                <div class="tags">
+                    <span class="tag tag-AI">AI</span>
+                    <span class="tag tag-3D-Graphics">AR</span>
+                    <span class="tag tag-Programming">Programming</span>
+                </div>
+                <div class="vid-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QBosS6uVUto?si=k5yC4tp5FdJtjt_F" title="YouTube video player" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+                </div>
+                <img src="../medien/ablauf_bThesis_En.png" alt="AR Prototype Workflow" class="medium-img">
             </div>
-        </nav>
-        <header>
-            <h1>Jochem Punt</h1>
-            <ul class="icons">
-                <li>
-                    <a href="https://github.com/jochempunt" target="_blank" title="Github Account">
-                        <img src="../medien/Github_black.png" alt="Jochem Punts Github"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/jochem-punt-5446b220a/" target="_blank" title="Linkedin">
-                            <img src="../medien/LinkedIN_black.png" alt="Jochem Punts Linkedin"></a>
-                        </li>
-                    </ul>
-                </header>
-                
-                
-                
-                
-                
-                
-                <main>
-                    
-                    <section>
-                        <h3>Portfolio</h3>
-                        <div class="project-container">
-                            <h4> Bachelor-Thesis: Development of an AR product configurator and the analysis of the AI utility value. <i>(In cooperation with CAS Software AG)</i>
-                            </h4>
-                            <p class="proj_beschreibung">Nowadays, companies enable customers to customize their products using product configuration software. Especially for complex products such as cars, the visualization of the result is crucial. Augmented Reality (AR) offers potential here,
-                                but is limited by complex user interfaces. My work therefore focuses on the development of an AR product configurator with an integrated, voice-controlled AI assistant. The assistant is based on a Large Language Model (LLM) to process
-                                natural language. The core idea lies in the synergy between augmented reality and artificial intelligence (AI). Based on this, this thesis presents an innovative solution that not only simplifies product configuration, but also optimizes
-                                usability by combining both technologies.</p> <em>(developed with Unity, ARFoundation, and GPT4) </em>
-                                <div class="vid-container">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QBosS6uVUto?si=k5yC4tp5FdJtjt_F" title="YouTube video player" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
-                                </div>
-                                <h4 class="centered">Workflow of the AR prototype</h5>
-                                    <img class="medium-img" src="../medien/ablauf_bThesis_En.png">
-                                </div>
-                                
-                                <div class="project-container">
-                                    <h4> Game Design Prototype: Temporal Transit Tales / DER BAHNHOF</i>
-                                    </h4>
-                                    <p class="proj_beschreibung">is a 3D adventure mystery game set in a mysterious train station where time seems to stand still. The player takes on the role of a reporter named Jack, who is equipped with a special gadget - a time control machine and also a camera.
-                                        The gameplay of the game is a combination of exploration, puzzle solving and detective work. The player will be able to fast forward or rewind time by 15 seconds in a limited area, to reveal clues and events that will help solve the
-                                        puzzles and uncover grievances in the station. The game is set in a dystopian steampunk setting of the 1910s. The aesthetics and atmosphere of the station will provide players with a captivating backdrop, rich in detail and mystery. <br>
-                                    <em>I was responsible for the development of the prototype (with Unity) and the implementation of the game sound (with WWise) in this project.</em>
-                                </p>
-                                <div class="vid-container">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2qp-dIsOxJ8?si=1CmIEF4l9Iu5Ad6F" title="YouTube video player" frameborder="0" allow="accelerometer;encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            
-                            
-                            <div class="project-container">
-                                <h4> Interactive Audio Study: Desert Drift</i>
-                                </h4>
-                                <p class="proj_beschreibung"> Modern racing games (like: Forza Horizon, Gran Tourismo, Need for Speed) often have linear soundtracks or use conventional pop music. With this design study I wanted to find out how to make music in racing games more interactive and and
-                                    reactive. </br> I used Unity and Wwise for the implementation. For the starting point I used a freely available racing game project, which contained 2 tracks and a control system for cars. <br> <i>I also produced all the music in this game</i>
-                                </p>
-                                <div class="vid-container">
-                                    
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vyuJ6yyRZ8E?si=y3_S2SL6acWwCSXP" title="YouTube video player" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            
-                            
-                            
-                            <div class="project-container">
-                                <h4> Blender Addon: Planet-Generator</i>
-                                </h4>
-                                <p class="proj_beschreibung"> This plugin, developed in collaboration with fellow student Nic R., aims to simplify the generation and customization of planets and their materials within Blender. 
-                                    Implemented using Python, it provides a range of features specifically designed for manipulating both terrestrial and gas planets.
-                                    Our plugin provides granular control over material properties and rendering parameters by accessing and modifying Blender material nodes using the Blender Python API.</em>
-                                </p>
-                                <div class="imgContainer">
-                                    <img src="../medien/planetengenerator/Planet_1.png">
-                                    <img src="../medien/planetengenerator/Planet_2.png">
-                                    <img src="../medien/planetengenerator/Planet_3.png">
-                                    <img src="../medien/planetengenerator/Planet_4.png">
-                                </div>
-                                <h4 id="padded" class="centered">Screenshot in Blender</h4>
-                                <img class="screenshot"   src="../medien/planetengenerator/screenshot_blender2.png">
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="project-container">
-                            <h4> Game-Prototyping Project: HotLine LA</i>
-                            </h4>
-                            <p class="proj_beschreibung"> This prototype is a simplified copy of the game “Hotline Miami”. It was created with the JS based game engine “Fudge” as an assignment for the subject “Prima — Prototyping of interactive Media and Games”. </br>
-                                <a href="https://jochempunt.github.io/Prima/HotlineLA/index.html" target="_blank">Link to the Game</a> (works best in Chrome) <br>
-                            </p>
-                            <div class="vid-container">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/NnDNIUXn_gg?si=93mlLH9iCXOYo__H" title="YouTube video player" frameborder="0" allow="accelerometer; ; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>
-                            <ul>
-                                <li> <a href="https://jochempunt.github.io/Prima/HotlineLA/index.html" target="_blank">Link to the Game</a> (best performance in Chrome) </li>
-                                <li>  <a href="https://github.com/jochempunt/Prima?tab=readme-ov-file" target="_blank">Link to the Github Repo</a></li>
-                             </ul>
-                        </div>
-                        
-                        
-                        
-                        
-                        
-                    </main>
-                    
-                    <footer>
-                        <a href="#top">to the top</a>
-                    </footer>
-                    
-                </body>
-                
-                </html>
+            <div class="project" data-tags="Games, Programming, Sound-Design">
+                <h3>Game Design Prototype: Temporal Transit Tales</h3>
+                <p>A 3D adventure mystery game set in a mysterious train station where time stands still. Players use a time control machine to solve puzzles and uncover the station's secrets in a dystopian steampunk 1910s setting.</p>
+                <p><em>Role: Prototype development and game sound implementation </em></p>
+                <div class="technologies">
+                    <em>Technologies: Unity, Wwise</em>
+                </div>
+
+                <div class="tags">
+                    <span class="tag tag-Games">Games</span>
+                    <span class="tag tag-Programming">Programming</span>
+                    <span class="tag tag-Sound-Design">Sound Design</span>
+                </div>
+                <div class="vid-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2qp-dIsOxJ8?si=1CmIEF4l9Iu5Ad6F" title="YouTube video player" frameborder="0" allow="accelerometer;encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="project" data-tags="Games, Sound-Design, Music-Production, Programming">
+                <h3>Interactive Audio Study: Desert Drift</h3>
+                <p>An exploration of interactive and reactive music in racing games, implemented using Unity and Wwise. This project aims to enhance the audio experience beyond conventional linear soundtracks.</p>
+                <div class="technologies">
+                    <em>Technologies: Unity, Wwise</em>
+                </div>
+
+                <div class="tags">
+                    <span class="tag tag-Games">Games</span>
+                    <span class="tag tag-Sound-Design">Sound Design</span>
+                    <span class="tag tag-Music-Production">Music Production</span>
+                    <span class="tag tag-Programming">Programming</span>
+                </div>
+                <div class="vid-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vyuJ6yyRZ8E?si=y3_S2SL6acWwCSXP" title="YouTube video player" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="project" data-tags="Programming, 3D-Graphics">
+                <h3>Blender Addon: Planet-Generator</h3>
+                <p>A Python-based Blender plugin for generating and customizing planets and their materials. Offers granular control over material properties and rendering parameters for both terrestrial and gas planets.</p>
+                <div class="technologies">
+                    <em>Technologies: Blender, Blender Python API (bpy)</em>
+                </div>
+
+                <div class="tags">
+                    <span class="tag tag-Programming">Programming</span>
+                    <span class="tag tag-3D-Graphics">3D-Graphics</span>
+                </div>
+                <div class="imgContainer">
+                    <img src="../medien/planetengenerator/Planet_1.png" alt="Planet 1">
+                    <img src="../medien/planetengenerator/Planet_2.png" alt="Planet 2">
+                    <img src="../medien/planetengenerator/Planet_3.png" alt="Planet 3">
+                    <img src="../medien/planetengenerator/Planet_4.png" alt="Planet 4">
+                </div>
+                <h4 id="padded" class="centered">Screenshot in Blender</h4>
+                <img src="../medien/planetengenerator/screenshot_blender2.png" alt="Blender Screenshot" class="screenshot">
+            </div>
+
+            <div class="project" data-tags="Programming, Games">
+                <h3>Game Prototype: HotLine LA</h3>
+                <p>A simplified version of "Hotline Miami" created with the JS-based game engine "Fudge" for a course project.</p>
+                <div class="technologies">
+                    <em>Technology: Fudge (JavaScript Game engine)</em>
+                </div>
+
+                <div class="tags">
+                    <span class="tag tag-Programming">Programming</span>
+                    <span class="tag tag-Games">Games</span>
+                </div>
+                <div class="vid-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NnDNIUXn_gg?si=93mlLH9iCXOYo__H" title="YouTube video player" frameborder="0" allow="accelerometer; ; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <a href="https://jochempunt.github.io/Prima/HotlineLA/index.html" target="_blank">Play the Game</a>
+                <a href="https://github.com/jochempunt/Prima?tab=readme-ov-file" target="_blank">View on GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <button id="back-to-top" title="Back to Top">↑</button>
+        <p>&copy; 2024 Jochem Punt. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

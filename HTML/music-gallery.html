@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jochem Punt - Music Gallery</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/music.css">
+    <script src="../JS/script.js" defer></script>
+    <script src="../JS/music.js" defer></script>
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="blob"></div>
+
+    <nav>
+        <div id="pages">
+            <a href="index-en.html">Projects</a>
+            <a href="music-gallery.html" id="selected">Music Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Jochem Punt</h1>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/jochem-punt-5446b220a/" target="_blank" title="LinkedIn">
+                <img src="../medien/LinkedIN_black.png" alt="LinkedIn Link">
+            </a>
+        </div>
+    </header>
+    <main class="music-gallery">
+        <h2>Music Gallery</h2>
+        <div class="album-grid">
+            <div class="album-item" data-track-id="1460044411">
+                <div class="album-cover">
+                    <img src="../medien/music_covers/avatar.jpg" alt="Boiled">
+                </div>
+                <div class="album-info">
+                    <h3>Boiled</h3>
+                    <p>Liquid Drum 'n Bass track</p>
+                </div>
+            </div>
+            <!-- Repeat for other tracks, ensure each item has unique content -->
+            <div class="album-item" data-track-id="1050713551">
+                <div class="album-cover">
+                    <img src="../medien/music_covers/flowery-path.png" alt="Flowery Path">
+                </div>
+                <div class="album-info">
+                    <h3>Flowery Path</h3>
+                    <p>Tropical/Chill Soundtrack Demo</p>
+                </div>
+            </div>
+
+            <div class="album-item" data-track-id="1930328624">
+                <div class="album-cover">
+                    <img src="../medien/music_covers/TokkieTown.png" alt="Welcome to Bunny Island">
+                </div>
+                <div class="album-info">
+                    <h3>Welcome to bunny island</h3>
+                    <p>Game Soundtrack for "Tokki Town" (Cozy Game)</p>
+                </div>
+            </div>
+            <div class="album-item" data-track-id="1930494401">
+                <div class="album-cover">
+                    <img src="../medien/music_covers/rake_andBrake.png" alt="Race N' Break">
+                </div>
+                <div class="album-info">
+                    <h3>Race N' Break</h3>
+                    <p>Jungle Soundtrack for Interactive Audio Study </p>
+                </div>
+            </div>
+            <div class="album-item" data-track-id="1930501205">
+                <div class="album-cover">
+                    <img src="../medien/music_covers/bouyuyuy.png" alt="Lost Gold">
+                </div>
+                <div class="album-info">
+                    <h3>Lost Gold</h3>
+                    <p>Soundtrack for Game Jam submission</p>
+                </div>
+            </div>
+            <div class="album-item" data-track-id="984397510">
+                <div class="album-cover">
+                    <img src="../medien/music_covers/synthwave_cover.png" alt="Sin-thetic">
+                </div>
+                <div class="album-info">
+                    <h3>Sin-thetic</h3>
+                    <p>Synthwave Demo</p>
+                </div>
+            </div>
+
+            <!-- Add more items as needed -->
+        </div>
+    </main>
+
+    <div id="player-container">
+        <button id="close-player">×</button>
+        <iframe id="soundcloud-player" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"></iframe>
+    </div>
+
+    <footer>
+        <button id="back-to-top" title="Back to Top">↑</button>
+        <p>&copy; 2024 Jochem Punt. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
