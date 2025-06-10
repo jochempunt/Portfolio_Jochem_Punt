@@ -52,11 +52,6 @@
             <span class="filter-text">Programming</span>
           </label>
             <label class="filter-label">
-            <input type="checkbox" class="filter-checkbox" data-filter="music-production">
-            <span class="checkbox-custom"></span>
-            <span class="filter-text">Music Production</span>
-          </label>
-            <label class="filter-label">
             <input type="checkbox" class="filter-checkbox" data-filter="games">
             <span class="checkbox-custom"></span>
             <span class="filter-text">Games</span>
@@ -76,9 +71,13 @@
             <span class="checkbox-custom"></span>
             <span class="filter-text">AI</span>
           </label>
+           <label class="filter-label">
+            <input type="checkbox" class="filter-checkbox" data-filter="music-production">
+            <span class="checkbox-custom"></span>
+            <span class="filter-text">Music Production</span>
+          </label>
         </div>
     </div>
-
 
     <main>
         <section id="portfolio">
@@ -101,6 +100,52 @@
                 </div>
                 <img src="../medien/ablauf_bThesis_En.png" alt="AR Prototype Workflow" class="medium-img">
             </div>
+
+            <div class="project" data-tags="Programming, Maths">
+                <h3>Research Project: Quaternion-Based Gimbal Control Interface</h3>
+                <p>As a research assistant, I developed control software (with MATLAB) for a motorized Pan-Tilt-Roll camera gimbal, driven by the PINE Controller from Blackforest Motion.
+                    The software was created to support future research in Structure-from-Motion (SfM) and 3D reconstruction.</p>
+                <p>My contributions included:
+                    <ul>
+                        <li>Designing a MATLAB-based GUI to generate, preview, and export motion paths.</li>
+                        <li>Integrating quaternion-based SLERP (Spherical Linear Interpolation) for gimbal orientation control.</li>
+                        <li>Developing tooling for real-time playback, debugging, and dataset management.</li>
+                    </ul>
+                </p>
+                <div class="technologies">
+                    <em>Matlab, Pine Motion</em>
+                </div>
+                <div class="tags">
+                    <span class="tag tag-Programming">Programming</span>
+                </div>
+                <div class="vid-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QBfR5ioWz-o" title="YouTube video player" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+                </div>
+                <img src="../medien/matlab_img.PNG" alt="Matlab GUI of Research Project" class="medium-img">
+            </div>
+
+            <div class="project" data-tags="Programming, 3D-Graphics">
+                <h3>Blender Addon: Planet-Generator</h3>
+                <p>A Python-based Blender plugin for generating and customizing planets and their materials. Offers granular control over material properties and rendering parameters for both terrestrial and gas planets.</p>
+                <div class="technologies">
+                    <em>Technologies: Blender, Blender Python API (bpy)</em>
+                </div>
+                <a href="https://github.com/jochempunt/PlanetenGenerator" target="_blank">View on GitHub</a>
+
+                <div class="tags">
+                    <span class="tag tag-Programming">Programming</span>
+                    <span class="tag tag-3D-Graphics">3D-Graphics</span>
+                </div>
+                <div class="imgContainer">
+                    <img src="../medien/planetengenerator/Planet_1.png" alt="Planet 1">
+                    <img src="../medien/planetengenerator/Planet_2.png" alt="Planet 2">
+                    <img src="../medien/planetengenerator/Planet_3.png" alt="Planet 3">
+                    <img src="../medien/planetengenerator/Planet_4.png" alt="Planet 4">
+                </div>
+                <h4 id="padded" class="centered">Screenshot in Blender</h4>
+                <img src="../medien/planetengenerator/screenshot_blender2.png" alt="Blender Screenshot" class="screenshot">
+            </div>
+
             <div class="project" data-tags="Games, Programming, Sound-Design">
                 <h3>Game Design Prototype: Temporal Transit Tales</h3>
                 <p>A 3D adventure mystery game set in a mysterious train station where time stands still. Players use a time control machine to solve puzzles and uncover the station's secrets in a dystopian steampunk 1910s setting.</p>
@@ -137,26 +182,7 @@
                 </div>
             </div>
 
-            <div class="project" data-tags="Programming, 3D-Graphics">
-                <h3>Blender Addon: Planet-Generator</h3>
-                <p>A Python-based Blender plugin for generating and customizing planets and their materials. Offers granular control over material properties and rendering parameters for both terrestrial and gas planets.</p>
-                <div class="technologies">
-                    <em>Technologies: Blender, Blender Python API (bpy)</em>
-                </div>
-
-                <div class="tags">
-                    <span class="tag tag-Programming">Programming</span>
-                    <span class="tag tag-3D-Graphics">3D-Graphics</span>
-                </div>
-                <div class="imgContainer">
-                    <img src="../medien/planetengenerator/Planet_1.png" alt="Planet 1">
-                    <img src="../medien/planetengenerator/Planet_2.png" alt="Planet 2">
-                    <img src="../medien/planetengenerator/Planet_3.png" alt="Planet 3">
-                    <img src="../medien/planetengenerator/Planet_4.png" alt="Planet 4">
-                </div>
-                <h4 id="padded" class="centered">Screenshot in Blender</h4>
-                <img src="../medien/planetengenerator/screenshot_blender2.png" alt="Blender Screenshot" class="screenshot">
-            </div>
+            
 
             <div class="project" data-tags="Programming, Games">
                 <h3>Game Prototype: HotLine LA</h3>
